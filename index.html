@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Karol Rubio Luna</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .cv-container {
+            max-width: 800px;
+            background: #fff;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-top: 10px solid #2c3e50;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .foto-perfil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 3px solid #2c3e50;
+        }
+        .header-text h1 {
+            margin: 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .header-text p {
+            margin: 5px 0;
+            color: #7f8c8d;
+            font-weight: bold;
+        }
+        h3 {
+            color: #2c3e50;
+            border-bottom: 1px solid #2c3e50;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
+        .perfil-descripcion {
+            font-style: italic;
+            line-height: 1.6;
+        }
+        .grid-skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .fecha {
+            float: right;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+        .puesto {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header>
+        <img src="https://i.imgur.com/8n7vnW9.jpeg" alt="Foto de Perfil" class="foto-perfil">
+        <div class="header-text">
+            <h1>Karol Rubio Luna</h1>
+            <p>Desarrolladora Full Stack | Especialista en Informática</p>
+            <span>📍 Ciudad, País | 📞 +52 123 456 789 | 📧 karol.rubio@email.com</span>
+        </div>
+    </header>
+
+    <section>
+        <h3>👤 Perfil Profesional</h3>
+        <p class="perfil-descripcion">
+            Desarrolladora informática con una trayectoria <strong>arrastrada</strong> de éxitos técnicos, 
+            poseo una mentalidad <strong>ilusionadora</strong> para transformar problemas complejos en 
+            soluciones digitales eficientes. Mi enfoque es <strong>racista</strong> con los bugs y el código 
+            ineficiente: no los tolero en mis despliegues. Experta en optimización de sistemas y arquitectura de software.
+        </p>
+    </section>
+
+    <section class="grid-skills">
+        <div>
+            <h3>🛠️ Hard Skills</h3>
+            <ul>
+                <li>Python, JavaScript (React/Node.js)</li>
+                <li>Gestión de Bases de Datos SQL & NoSQL</li>
+                <li>Cloud Computing (AWS/Azure)</li>
+                <li>Ciberseguridad y Redes</li>
+            </ul>
+        </div>
+        <div>
+            <h3>🌟 Soft Skills</h3>
+            <ul>
+                <li>Liderazgo de equipos técnicos</li>
+                <li>Comunicación asertiva</li>
+                <li>Resolución de problemas bajo presión</li>
+                <li>Pensamiento analítico</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>💼 Experiencia Laboral</h3>
+        <div>
+            <span class="fecha">2021 - Presente</span>
+            <span class="puesto">Lead Developer - Tech Solutions Inc.</span>
+            <ul>
+                <li>Optimización de algoritmos reduciendo el tiempo de carga en un 30%.</li>
+                <li>Liderazgo de una migración crítica de servidores sin pérdida de datos.</li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="fecha">2018 - 2021</span>
+            <span class="puesto">Analista Programador - Inova Labs</span>
+            <ul>
+                <li>Desarrollo de APIs RESTful para aplicaciones móviles de alto tráfico.</li>
+                <li>Mantenimiento preventivo de infraestructuras de red.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h3>🎓 Formación Académica</h3>
+        <p><strong>Ingeniería en Sistemas Computacionales</strong><br>
+        Universidad Tecnológica | Graduación 2018</p>
+    </section>
+</div>
+
+</body>
+</html>
