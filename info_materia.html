@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú del Curso - Desarrollo Full Stack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e3a8a;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .card h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+            color: #334155;
+            font-size: 0.95rem;
+        }
+
+        .card ul li::before {
+            content: "•";
+            color: #2563eb;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Menú del Curso – Desarrollo Full Stack</h1>
+
+    <div class="contenedor">
+
+        <div class="card">
+            <h2>Fundamentos del Desarrollo Full Stack</h2>
+            <ul>
+                <li>Rol Front-End, Back-End y Full Stack</li>
+                <li>Arquitectura Cliente-Servidor</li>
+                <li>Navegadores, Hosting y Dominios</li>
+                <li>Node.js, NPM, Git y VS Code</li>
+                <li>CI/CD con GitHub Actions</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Interfaces Web Modernas y Accesibles</h2>
+            <ul>
+                <li>HTML5 y estructura semántica</li>
+                <li>CSS3 y diseño responsive</li>
+                <li>Bootstrap / Tailwind</li>
+                <li>Accesibilidad (WCAG)</li>
+                <li>Media Queries</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Patrones de Diseño en Back-End</h2>
+            <ul>
+                <li>Creacionales (Singleton, Factory)</li>
+                <li>Estructurales (Adapter, Decorator, Composite)</li>
+                <li>Comportamiento (Observer, State)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Desarrollo Front-End con Angular</h2>
+            <ul>
+                <li>Angular CLI</li>
+                <li>Componentes y Servicios</li>
+                <li>HTTP y JSON</li>
+                <li>Firebase (BaaS)</li>
+                <li>Formularios Reactivos</li>
+                <li>Ruteo y Navegación</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
 
