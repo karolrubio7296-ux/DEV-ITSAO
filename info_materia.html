@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Menú del Curso - Desarrollo Full Stack</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Fonts -->
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
@@ -41,7 +40,7 @@
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: 0.3s;
         }
 
         .card:hover {
@@ -79,12 +78,28 @@
                 font-size: 1.8rem;
             }
         }
-        <a href="index.html">
-    <button>Regresar al Inicio</button>
-</a>
 
+        .btn-regresar {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background-color: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: 0.3s;
+        }
+
+        .btn-regresar:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.1);
+        }
     </style>
 </head>
+
 <body>
 
     <h1>Menú del Curso – Desarrollo Full Stack</h1>
@@ -136,6 +151,9 @@
 
     </div>
 
+    <a href="index.html" class="btn-regresar">⬅ Inicio</a>
+
 </body>
 </html>
+
 
