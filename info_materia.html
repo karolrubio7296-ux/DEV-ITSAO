@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <title>Menú del Curso - Desarrollo Full Stack</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
+        
         * {
             margin: 0;
             padding: 0;
@@ -40,7 +42,7 @@
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transition: 0.3s;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .card:hover {
@@ -79,24 +81,28 @@
             }
         }
 
-        .btn-regresar {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 12px 20px;
-            background-color: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            transition: 0.3s;
-        }
+        /* BOTÓN REGRESAR */
+.btn-regresar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    z-index: 1000;
+}
 
-        .btn-regresar:hover {
-            background-color: #0ea5e9;
-            transform: scale(1.1);
-        }
+.btn-regresar:hover {
+    background-color: #0ea5e9;
+    transform: scale(1.1);
+}
+
+        
     </style>
 </head>
 
@@ -151,9 +157,10 @@
 
     </div>
 
+    <!-- BOTÓN DENTRO DEL BODY -->
     <a href="index.html" class="btn-regresar">⬅ Inicio</a>
 
 </body>
 </html>
 
-
+arreglalo me sigue saliendo mal 
